@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks for Logging In</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+/* General Styles */
+body {
+    background-color: #14213D; /* Dark Blue background */
+    color: #E5E5E5; /* Light Gray text */
+    font-family: 'Arial', sans-serif; /* Font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.thanks-container {
+    background-color: #000000; /* Black container */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Slightly wider for the image */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation for the container */
+}
+
+.thanks-container h1 {
+    color: #FCA311; /* Bright Orange heading */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: slideIn 1s ease-in-out; /* Slide in animation for the heading */
+}
+
+.thanks-container p {
+    color: #FFFFFF; /* White text */
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.sorry-animation {
+    width: 100%;
+    max-width: 400px; /* Restrict image size */
+    border-radius: 10px; /* Rounded corners for the image */
+    animation: bounce 1s ease-in-out infinite; /* Bouncing animation for the image */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <div class="thanks-container">
+        <h1>THANKS FOR LOGGING IN</h1>
+       
+        <img src="https://media.giphy.com/media/sjkl9MJD57BWersvzJ/giphy.gif" alt="Sorry Animation" class="sorry-animation">
+    </div>
+</body>
+</html>

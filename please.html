@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In Required</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+/* General Styles */
+body {
+    background-color: #14213D; /* Dark Blue background */
+    color: #E5E5E5; /* Light Gray text */
+    font-family: 'Arial', sans-serif; /* Font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.error-container {
+    background-color: #000000; /* Black container */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    animation: shake 0.5s ease-in-out; /* Shake animation for "Sorry" effect */
+    animation-iteration-count: 1; /* Shake once */
+}
+
+.error-container h1 {
+    color: #FCA311; /* Bright Orange heading */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out; /* Fade in animation */
+}
+
+.signin-form {
+    margin-top: 1rem;
+}
+
+button {
+    background-color: #FCA311; /* Bright Orange button */
+    color: #000000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFFFFF; /* White on hover */
+    color: #000000; /* Change text to black for contrast */
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+
+
+
+
+    </style>
+    <div class="error-container">
+        <h1>THIS USER IS NOT VALID</h1>
+        <h1>SIGN IN IF YOU WANT TO SIGN IN</h1>
+        <form action="/signin" method="GET" class="signin-form">
+            <button type="submit">SIGN-IN</button>
+        </form>
+    </div>
+</body>
+</html>
