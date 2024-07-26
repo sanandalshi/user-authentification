@@ -14,7 +14,7 @@ app.use(flash());
 app.get('/',(req,res)=>{
     let logged=req.session.loggedin;
     let message=req.flash('error');
-   res.render('home',{logged,message});
+   res.render('index',{logged,message});
 })
 
 // app.post('/login',(req,res)=>{
